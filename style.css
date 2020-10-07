@@ -1,0 +1,82 @@
+.menu{
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	border-right: solid 4px gray;
+	background: #fff;
+	top: 0;
+	z-index: 1;
+}
+.box-arrow{
+	background: gray;
+	border: none;
+	transform: rotate(45deg);
+	width: 50px;
+	height: 50px;
+}
+.arrow{
+	background: none;
+	border: none;
+	transform: rotate(-90deg);
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+.logo{
+	background: url("doco_logo.svg");
+	background-size: 100% 100%;
+	border: 3px solid yellowgreen;
+	background-repeat: no-repeat;
+	padding: 100px;
+}
+
+main {
+	border: solid 1px cyan;
+}
+#body {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr;
+	justify-items: center;
+	background: silver;
+}
+
+#body li {
+	border: solid 1px #000;
+	justify-content: center;
+}
+
+#body li img {
+	cursor: pointer;
+	transition: 1s;
+	box-shadow: 40px 20px 20px gray;
+}
+#body li img:hover {
+	transform: scale(1.03);
+	transition: 0s;
+}
+
+.addDoc{
+	background: yellowgreen;
+	border: 2px gray dashed;
+	border-radius: 5px;
+	padding: 40px;
+	cursor: pointer;
+	color: gray;
+}
+.addDoc:hover{
+	border-color: black;
+	color: black;
+}
+
+
+
+
+
+
+
+
+*{padding:0;margin:0;}

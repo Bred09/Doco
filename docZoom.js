@@ -1,25 +1,12 @@
+// var passportZagranKg = document.querySelector('').onclick = () => {f1()}
+// var svidOroj = document.querySelector('').onclick = () => {f2()}
+// var snils = document.querySelector('').onclick = () => {f3()}
+// var migrCard = document.querySelector('').onclick = () => {f4()}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Doco</title>
+var view = document.querySelector('.view-box');
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="doco_logo_min.svg" type="image/svg">
-</head>
-<body>
-
-	<div class="menu">
-	<div class="box-arrow"><button class="arrow"></button></div>
-		<div class="logo"></div>
-		<button class="cls">Close</button>
-		<button class="addDoc">Добавить документ</button>
-	</div>
-
-	<main>
-		<ul id="body">
-			<li class="item1"><img src="img/zagran_passport_kg.svg" alt="" onclick="f1()">
-				<ul class="data">
+function f1() {
+	var data = `<ul class="data">
 					<li>Паспорт № <b>AC4198726</b></li>
 					<li>Фамилия <b>TUNGUCHBEK UULU</b></li>
 					<li>Имя <b>BEKZAT</b></li>
@@ -32,10 +19,12 @@
 					<li>Дата окончания срока действия <b>19 03 2030</b></li>
 
 					<li>Персональный номер <b>22004200250549</b></li>
-				</ul>
-			</li>
-		    <li class="item1"><img src="img/svid_o_rojd_kg.svg" alt="" onclick="f2()">
-				<ul class="data">
+				</ul>`;
+	view.innerHTML = data
+	viewBox()
+}
+function f2() {
+	var data = `<ul class="data">
 					<li>Паспорт № <b>AC4198726</b></li>
 					<li>Фамилия <b>TUNGUCHBEK UULU</b></li>
 					<li>Имя <b>BEKZAT</b></li>
@@ -48,20 +37,24 @@
 					<li>Дата окончания срока действия <b>19 03 2030</b></li>
 
 					<li>Персональный номер <b>22004200250549</b></li>
-				</ul>
-		    </li>
-		    <li class="item1"><img src="img/snils_rf.svg" alt="" onclick="f3()">
-		    	<ul class="data">
+				</ul>`;
+	view.innerHTML = data
+	viewBox()
+}
+function f3() {
+	var data = `<ul class="data">
 					<li>№ <b>20521963332</b></li>
 					<li>Ф. И. О. <b>ТУНГУЧБЕК УУЛУ БЕКЗАТ</b></li>
 					<li>Дата и место рождения <b>20 апреля 2002</b></li>
 					<li><b>КАРА-КОЧКОР КАРА-КУЛЖИНСКИЙ ОШСКАЯ ОБЛАСТЬ КЫРГЫЗСКАЯ РЕСПУБЛИКА</b></li>
 					<li>Пол <b>МУЖСКОЙ</b></li>
 					<li>Дата регистрации <b>27 марта 2019</b></li>
-				</ul>
-		    </li>
-			<li class="item1"><img src="img/migration_card_rf|blr.svg" alt="" onclick="f4()">
-				<ul class="data">
+				</ul>`;
+	view.innerHTML = data
+	viewBox()
+}
+function f4() {
+	var data = `<ul class="data">
 					<li>Серия <b>6514</b></li>
 					<li>№ <b>0581396</b></li>
 					<li>Фамилия <b>Тунгучбек</b></li>
@@ -74,17 +67,15 @@
 					<li>Цель визита <b>Частный</b></li>
 					<li>Срок пребывания: с <b>19 03 2020</b> до <b></b></li>
 					<li>Подпись <b></b></li>
-				</ul>
-			</li>
-		</ul>
-	</main>
+				</ul>`;
+	view.innerHTML = data
+	viewBox()
+}
 
-	<div class="view-box">
-		<h1>Title</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ducimus incidunt sunt dolore delectus dolor facere ad temporibus iusto officiis quas cum, sapiente maxime rem suscipit.</p>
-	</div>
-	
-<script src="menu.js" defer></script>
-<script src="docZoom.js" defer></script>
-</body>
-</html>
+function viewBox() {
+	view.style.transform = 'scale(1)';
+}
+
+document.querySelector('.cls').onclick = () => {
+	view.style.transform = 'scale(0)';
+}

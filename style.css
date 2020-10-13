@@ -51,6 +51,7 @@ body{
 	background: silver;
 }
 #body {
+	padding-left: calc(50% - 200px);
 }
 
 #body li {

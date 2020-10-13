@@ -7,6 +7,7 @@ var view = document.querySelector('.view-box');
 
 function f1() {
 	var data = `<ul class="data">
+		<button class="cls" onclick="closeViewBox()">Close</button>
 					<li>Паспорт № <b>AC4198726</b></li>
 					<li>Фамилия <b>TUNGUCHBEK UULU</b></li>
 					<li>Имя <b>BEKZAT</b></li>
@@ -25,6 +26,7 @@ function f1() {
 }
 function f2() {
 	var data = `<ul class="data">
+		<button class="cls" onclick="closeViewBox()">Close</button>
 					<li>Паспорт № <b>AC4198726</b></li>
 					<li>Фамилия <b>TUNGUCHBEK UULU</b></li>
 					<li>Имя <b>BEKZAT</b></li>
@@ -43,6 +45,7 @@ function f2() {
 }
 function f3() {
 	var data = `<ul class="data">
+		<button class="cls" onclick="closeViewBox()">Close</button>
 					<li>№ <b>20521963332</b></li>
 					<li>Ф. И. О. <b>ТУНГУЧБЕК УУЛУ БЕКЗАТ</b></li>
 					<li>Дата и место рождения <b>20 апреля 2002</b></li>
@@ -55,6 +58,7 @@ function f3() {
 }
 function f4() {
 	var data = `<ul class="data">
+		<button class="cls" onclick="closeViewBox()">Close</button>
 					<li>Серия <b>6514</b></li>
 					<li>№ <b>0581396</b></li>
 					<li>Фамилия <b>Тунгучбек</b></li>
@@ -76,6 +80,6 @@ function viewBox() {
 	view.style.transform = 'scale(1)';
 }
 
-document.querySelector('.cls').onclick = () => {
+function closeViewBox() {
 	view.style.transform = 'scale(0)';
 }

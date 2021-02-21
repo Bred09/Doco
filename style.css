@@ -1,0 +1,108 @@
+.menu{
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	border-right: 2px solid #fff;
+	background: gray;
+	top: 0;
+	left: 0px;
+	z-index: 1;
+	transition: 1s;
+}
+.box-arrow{
+	position: relative;
+	left: 200px;
+	top: calc(50% - 70px);
+	background: gray;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-radius: 100%;
+	transform: rotate(-135deg);
+	width: 100px;
+	height: 100px;
+}
+.arrow{
+	background: url('img/arrow.svg') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 70px;
+	height: 70px;
+	border: none;
+	cursor: pointer;
+	transition: 1s;
+}
+
+
+.logo{
+	background: url("doco_logo.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 15%;
+}
+
+main {
+	background: #8d8d8d;
+}
+body{
+	background: silver;
+}
+#body {
+	padding-left: calc(50% - 200px);
+}
+
+#body li {
+	border: solid 1px #000;
+}
+
+#body li img {
+	cursor: pointer;
+	transition: 1s;
+	box-shadow: 40px 20px 20px gray;
+}
+#body li img:hover {
+	transform: scale(1.03);
+	transition: 0s;
+}
+
+.addDoc{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: yellowgreen;
+	border: 2px gray dashed;
+	padding: 40px;
+	cursor: pointer;
+	color: gray;
+	font-size: 25px;
+}
+.addDoc:hover{
+	border: 2px #000 solid;
+	color: black;
+}
+
+
+
+.view-box{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height:  100%;
+	background: #9d9d9d;
+	padding-left: 50%;
+	opacity: 1;
+	transition: 1s;
+	transform: scale(0);
+}
+
+
+
+
+
+
+
+
+*{padding:0;margin:0;}

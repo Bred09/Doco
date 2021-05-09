@@ -1,0 +1,42 @@
+.btn-red {
+	background: #e10909;
+}
+.btn-red:hover {
+	background: #b01616;
+}
+
+.btn-green {
+	background: #1eb71e;
+}
+.btn-green:hover {
+	background: #139d15;
+}
+
+.btn-blue {
+	background: #0989fa;
+}
+.btn-blue:hover {
+	background: #0564b8;
+}
+
+
+/*------------------->*/
+.btn {
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px 15px;
+	border: 1px ridge black;
+	color: #fff;
+}
+
+.inp {
+	border: solid 1px #fff;
+	background: #2d2d2d;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+.inp:focus {
+	border-color: #4cc4ff;
+	transform: scale(1, 1.1);
+}

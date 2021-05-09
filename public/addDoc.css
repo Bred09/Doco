@@ -1,0 +1,30 @@
+.addDocBox {
+	display: ;
+	background: #4d4d4d;
+	border: solid green 2px;
+	position: absolute;
+	right: calc(50% - 360px);
+	top: 0px;
+	color: #fff;
+	width: 720px;
+}
+
+.close-box {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+form {
+	border: 1px solid red;
+}
+
+form li, div > p {
+	display: inherit;
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+
+form img {
+	width: 100%;
+}

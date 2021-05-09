@@ -5,18 +5,30 @@
 	<title>Doco</title>
 
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="addDoc.css">
+	<link rel="stylesheet" href="sye.css">
 	<link rel="shortcut icon" href="doco_logo_min.svg" type="image/svg">
 </head>
 <body>
-
+<!-- Left menu START -->
 	<div class="menu">
 	<div class="box-arrow"><button class="arrow"></button></div>
 		<div class="logo"></div>
-		<button class="addDoc">Добавить документ</button>
+		<button class="addDoc" onclick="addDoc()">Добавить документ</button>
 	</div>
-
-	<main>
+<!-- END -->
+	<div class="main">
 		<ul id="body">
+			<ul class="docBox">
+				<% docs.forEach(function(doc) { %>
+					<li class="item1">
+						<h3><%= doc.author %></h3>
+						<img class="doc-img" src="img/uploads/<%= doc.img %>" alt="">
+						<h2><p><%= doc.textBody %></p></h2>
+					</li>
+					<hr>
+				<% }); %>
+			</ul>
 			<li class="item1"><img src="img/zagran_passport_kg.svg" alt="" onclick="f1()">
 				
 			</li>
@@ -33,11 +45,36 @@
 				
 			</li>
 		</ul>
-	</main>
+	</div>
 
 	<div class="view-box"></div>
-	
+
+	<div class="addDocBox">
+		<button type="button" class="close-box btn-red btn" onclick="closeBoxAddDoc()">Close x</button>
+
+		<form method="post" action="/add_doc" enctype=multipart/form-data>
+			<ol class="fields">
+				<li><h4>Автор:</h4><input class="inp" name="author" type="text"></li>
+				<li><h4>Содержание:</h4><textarea class="inp" rows="10" cols="70" name="textBody"></textarea></li>
+			</ol>
+			<div>
+				<label for="image_uploads" class="btn btn-blue">Выберите</label><p>изображение (PNG, JPG, JPEG)</p>
+				<input class="inp" type="file" id="image_uploads" name="image" accept=".jpg, .jpeg, .png" multiple="" style="opacity: 0;position: absolute;left: -100%;">
+			</div>
+			<div class="preview"><img></div>
+			<div>
+				<button class="add-doc-btn btn btn-green">Add +</button>
+			</div>
+		</form>
+	</div>
+
+<script>
+	document.body += "Script connect!"
+</script>
+
 <script src="menu.js" defer></script>
 <script src="docZoom.js" defer></script>
+<script src="add_doc.js" defer></script>
+<script src="img_upload.js" defer></script>
 </body>
 </html>

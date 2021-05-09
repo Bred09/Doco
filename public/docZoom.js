@@ -7,7 +7,7 @@ var view = document.querySelector('.view-box');
 
 function f1() {
 	var data = `<ul class="data">
-		<button class="cls" onclick="closeViewBox()">Close</button>
+		<button class="btn btn-red" onclick="closeViewBox()">Close x</button>
 					<li>Паспорт № <b>AC4198726</b></li>
 					<li>Фамилия <b>TUNGUCHBEK UULU</b></li>
 					<li>Имя <b>BEKZAT</b></li>
